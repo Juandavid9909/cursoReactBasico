@@ -1,9 +1,18 @@
-// Scope
+import Tarea from "./19-modulos.js";
 
-var musica = "Rock";
+const tarea1 = new Tarea("Aprender JavaScript", "Urgente");
 
-if (musica) {
-    var musica = "Grunge";
-    console.log("dentro del if: ", musica);
-}
-console.log("fuera del if: ", musica);
+console.log(tarea1);
+
+tarea1.mostrar();
+
+
+
+// import { nombreTarea, crearTarea, tareaCompletada } from "./19-modulos.js";
+
+// console.log(nombreTarea);
+
+// const tarea1 = crearTarea("Pasear al perro", "Media");
+// console.log(tarea1);
+
+// tareaCompletada();
