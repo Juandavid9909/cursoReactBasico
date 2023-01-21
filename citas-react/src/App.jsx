@@ -1,9 +1,17 @@
-function App() {
-  return (
-    <div>
-      <h1>Hola Mundo</h1>
+import Header from "./components/Header";
+import Formulario from "./components/Formulario";
+import ListadoPacientes from "./components/ListadoPacientes";
 
-      <p>Un párrafo</p>
+function App() {
+
+  return (
+    <div className="container mx-auto mt-20">
+      <Header />
+
+      <div className="mt-12 md:flex">
+        <Formulario />
+        <ListadoPacientes />
+      </div>
     </div>
   );
 }
