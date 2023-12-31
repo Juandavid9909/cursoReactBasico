@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 
 import conectarDB from "./config/db.js";
+import proyectoRoutes from "./routes/proyectoRoutes.js";
 import usuarioRoutes from "./routes/usuarioRoutes.js";
 
 const app = express();
@@ -14,6 +15,7 @@ conectarDB();
 
 // Routing
 app.use("/api/usuarios", usuarioRoutes);
+app.use("/api/proyectos", proyectoRoutes);
 
 const PORT = process.env.PORT || 4000;
 
